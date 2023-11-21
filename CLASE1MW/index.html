@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--define el conjunto de caracteres utilizados-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--el primero indica que esta meta etiqueta es equivalente a un encabezado HTTP y se usa para proporcionar instrucciones especiales al navegador--> <!--la segunda indica la compatibilidad con un determinado navegador-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--esta etiqueta genera la compatibilidad con dispositivos moviles-->
+    <title>Mi primera chambaaa</title> <!--el contenido de esta etiqueta aparece en la pestaña de la pagina-->
+    <link rel="stylesheet" href="style.css"> <!--rel para vincular archivos, carpetas, etc y href pones la direccion del archivo-->
+    <!--
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(227, 24, 24);
+            color: rgb(5, 5, 5);
+            } /*la etiqueta margin sirve para establecer espacio al rededor de la parte externa del contenido, padding es el margen interior, el relleno del cuerpo, background color es para poner color al fondo del body, y la etiqueta color define el color del texto del body */
+
+        header {
+            background-color: rgb(250, 0, 0); /*color del encabezado*/
+            text-align: center; /* alineacion del texto*/
+            padding: 20px;
+            }
+
+        img {
+            max-width: 100%; 
+            height: auto; 
+            } /*width es ancho, esto estable el ancho de la imagen, height es la altura, establece el alto de tu imagen*/
+
+        h1 {
+            color: rgb(0, 0, 0);
+            font-size: 3em; /*es una unidad de medida para los tamaños de fuente EM es una proporción, el tamaño de la fuente 3em que es 3 veces el tamaño predeterminado*/
+            margin: 0;
+            } /*color es para el color y font size para el tamaño de todas las etiquetas h1*/
+
+        nav {
+            background-color: blue; /*color para la barra de navegación*/
+            padding: 10px;
+            }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            }
+
+        nav ul li a { /*etiqueta <a> para el enlace que esta dentro del <li> que es el elemento de la lista desordenada que a su vez esta dentro del <nav> tendra las sgtes propiedades: */ 
+            color: aliceblue;
+            text-decoration: none; /*le quita el subrayado*/
+            font-size: 1.2em;
+            }
+
+        main {
+            padding: 20px;
+            }
+
+        section {
+            background-color: green; /*color para las secciones*/
+            padding: 20px;
+            margin: 20px 0;
+            }
+
+        section h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 10px;
+            }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            color: aqua;
+            }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /*agrega esquinas redondeadas a las imágenes*/
+            margin-top: 10px;
+            }
+        
+        section ol,
+        section ul { /*listas que estan dentro de la etiqueta section */
+            font-size: 1.2em;
+            color: beige;
+            margin-top: 10px;
+            }
+        
+        footer { /*pie de página*/
+            background-color: rgb(0, 0, 0);
+            color: blanchedalmond;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style> --> <!--la etiqueta style es de CSS-->
+    <script></script>
+</head>
+<body> <!--Contenido principal de la pagina-->
+
+    <header>
+        <!--Encabezado de la pagina (logotipo, menú, etc)-->
+        <h1 class="main-heading">LA HISTORIA DE DRAGON BALL</h1>
+    </header>
+    <nav>
+        <!--Menú de navegacion-->
+        <ul> <!--etiqueta para armar una lista de enlaces, define una lista desordenada de elementos sin enumerar--> 
+            <li> <!--elemento de la lista de <ul> --> 
+                 <a href="https://www.youtube.com/watch?v=yoLiHQRUdmA">saga de Dragon Ball</a>
+            </li>
+            <li> <a href="https://www.youtube.com/watch?v=ALZnOKJLflc">Saga de Dragon Ball Z</a>
+            </li>
+            <li> <a href="https://www.youtube.com/watch?v=wr2Swl1QYeM">Saga de Sayajines</a>
+            </li>
+            <li> <a href="https://www.youtube.com/watch?v=bfu_JvuDCPw">Saga de Freezer</a> 
+            </li>
+            <li> <a href="https://www.youtube.com/watch?v=tcl4eK6y1d0">Saga de Cell</a> 
+            </li>
+            <li> <a href="https://www.youtube.com/watch?v=GA-IXDHaR80">Saga de Majin Boo</a>
+            </li>
+            <li> <a href="https://www.youtube.com/watch?v=BqLCV-xsIzY">Saga de Dragon Ball GT (CANON)</a>
+            </li>
+            <li> <a href="#AKIRA TORIYAMA">Creador de la historia</a> <!--Este ref es con # numeral para poder redirigir a la parte de la web donde se encuentra la información de ref-->
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!--Contenido principal de la página-->
+        <h1> Dragon Ball </h1> <!--h1 hasta h6-->
+        <p>¡Vamos a buscar las esferas del Dragon!</p> <!--otros elementos como imagenes, listas, enlaces, etc-->
+        
+        <section id="saga1" class="saga-section">
+            <h2>Saga de Dragon Ball</h2>
+            <p>La historia comienza con la llegada de Goku a la tierra el cual fue encontrado por Gohan, su abuelo y primer maestro, luego con la llegada de Bulma comienzan las aventuras de Goku</p>
+            <img src="img/Dragon Ball.webp" alt="Personajes de Dragon Ball"> <!--SRC= URL de imagen, ALT= Descripción del SRC-->
+            <p>Episodios notables:</p>
+            <ol> <!--Genera una lista ordenada enumerada-->
+                <li>La llegada de Goku a la tierra</li>
+                <li>El encuentro de Goku con Bulma</li>
+                <li>El enfrentamiento con la patrulla roja</li>
+            </ol>
+        </section>
+
+        <section id="saga1" class="saga-section">
+            <h2>Saga de Dragon Ball Z</h2>
+            <p>En esta etapa de la historia, Goku se enfrenta con un namekusei malvado llamado Piccolo Daimaku</p>
+            <img src="img/goku vs picolo.jpg" alt="Goku venciendo a Piccolo">
+            <p>Episodios Notables:</p>
+            <ol>
+                <li>Goku en el templo del maestro Karin</li>
+                <li>Goku vs Tao Pai Pai</li>
+                <li>Goku vs Piccolo Daimaku</li>
+            </ol>
+        </section>
+
+        <section id="saga1" class="saga-section">
+            <h2>Saga de Sayajines</h2>
+            <p>La historia comienza con la llegada de sayajines al planeta tierra, quienes amenazan con destruir la civilización para luego vender el planeta, es donde Goku sale a la defensa y se enfrenta a ellos junto a sus amigos</p>
+            <img src="img/goku vs Vegeta.jpg" alt="Goku enfrentado a Vegeta, el principe de los Sayajines">
+            <p>Episodios notables:</p>
+            <ol>
+                <li>La llegada de Raditz</li>
+                <li>Goku entrenando con Kaiosama</li>
+                <li>Goku vs Vegeta</li>
+            </ol>
+        </section>
+
+        <section id="saga1" class="saga-section">
+            <h2>Saga de Freezer</h2>
+            <p>Luego de la pelea con los sayajines, Goku y sus amigos viajan a otro planeta llamado nameku para buscar un nuevo Kamisama para la tierra y se encuentran con Freezer, un cruel villano que amenaza al universo, al cual Goku tiene que enfrentar con ayuda de Vegeta y los demás</p>
+            <img src="img/goku vs freezer.jpg" alt="Goku en ssj1 vs Freezer">
+            <p>Episodios notables</p>
+            <ol>
+                <li>El viaje a Namekusei de Gohan, Bulma y Krilin</li>
+                <li>Goku Llegando a Namekusei</li>
+                <li>Goku vs Freezer</li>
+            </ol>
+        </section>
+
+        <section id="saga1" class="saga-section">
+            <h2>Saga de Cell</h2>
+            <p>Muchos años despues de la destrucción de la patrulla roja, un doctor llamado Maki Gero creo a unos androides para destruir a Goku y vengarse de él, pero todo se salió de control pues los androides eran mas malvados de lo que él pensaba, uno de ellos se llamaba Cell, quien amenazó con destruir el universo.</p>
+            <img src="img/goku vs cell.jpg" alt="Cell peleando con Goku en el torneo que él mismo organizo">
+            <p>Episodios notables</p>
+            <ol>
+                <li>La aparición de Trunks del futuro</li>
+                <li>Aparición de los androides</li>
+                <li>Torneo de Cell</li>
+            </ol>
+        </section>
+
+        <section id="saga1" class="saga-section">
+            <h2>Saga de Majin Boo</h2>
+            <p>Despues de muchos años de paz, en el universo aparece un villano muy poderoso, quien de la mano de un mago llamado Babidi reclaman destruirlo todo, es donde Goku y sus amigos entran en escena para acabar con la amenaza</p>
+            <img src="img/goku vs majin boo.jpg" alt="Goku vs Majin Boo">
+            <p>Episodios notables:</p>
+            <ol>
+                <li>Torneo de las artes marciales, aparición de el supremo Kaiosama</li>
+                <li>Goku vs Majin Vegeta</li>
+                <li>Goku y Vegeta vs Majin Boo</li>
+            </ol>
+        </section>
+
+        <section id="saga1" class="saga-section">
+            <h2>Saga de Dragon Ball GT (CANON)</h2>
+            <p>Esta historia se desarrolla por todo el universo, cuando Goku y sus amigos van a recolectar las esferas del dragon máximo y en el camino se van enfrentando a diferentes amenazas</p>
+            <img src="img/Dragon ball GT.jpg" alt="Dragon Ball GT">
+            <p>Episodios notables:</p>
+            <ol>
+                <li>El viaje de Goku, Trunks y Pan por el universo</li>
+                <li>Goku vs Baby</li>
+                <li>Goku vs Dragon de 1 estrella</li>
+            </ol>
+        </section>
+
+        <section id="AKIRA TORIYAMA">
+            <h2>AKIRA TORIYAMA</h2>
+            <p>El creador de la serie en el año 1991, en Japón, AKIRA TORIYAMA</p>
+            <img src="img/Akira Toriyama.jpg" alt="Akira Toriyama 1990"
+        </section>
+
+    <aside> <!--Contenido adicional o complementario (barra lateral, widgets, etc)-->
+    </aside>
+    <footer> <!--pie de página--> 
+        <!--Botón Mágico-->
+<button> 
+    Desarrollado por Marco Sulca
+        <style>
+            button{
+                background: black;
+                cursor: pointer;
+                border: none;
+                padding: 16px 32px;
+                color: #fff;
+                font-size: 24px;
+                font-weight: bold;
+                position: relative;
+                border-radius: 12px;
+                }
+            button:hover::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+                background-size: 800%;
+                border-radius: 10px;
+                filter: blur(8px);
+                animation: glowing 20s linear infinite;
+                }
+            @keyframes glowing {
+                0% {background-position: 0 0;}
+                50% {background-position: 400% 0;}
+                100% {background-position: 0 0;}
+            }
+        </style>
+    </button>
+    <!--Botón mágico-->
+    </footer>
+    </main>
+</body>
+</html>
